@@ -154,7 +154,7 @@ int main()
 	if ((fd1 = open("/etc/hosts", O_RDONLY)) < 0)
 		die("[-] open");
 
-	if (find_handle(fd1, "/etc/passwd", &root_h, &h) <= 0)
+	if (find_handle(fd1, "aaaaaa", &root_h, &h) <= 0)
 		die("[-] Cannot find valid handle!");
 
 	dump_handle(&h);
